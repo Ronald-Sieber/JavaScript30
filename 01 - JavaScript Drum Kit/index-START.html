@@ -75,6 +75,7 @@
     let keyD_Num = 0
     function gift() {
       window.location.href = 'https://upos-sz-estgoss.bilivideo.com/upgcxcode/04/24/1641702404/1641702404-1-192.mp4?e=ig8euxZM2rNcNbRj7bdVhwdlhWTjhwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&uipk=5&gen=playurlv3&os=upos&og=cos&trid=1626dd81129348009f3a8a0c3fb2762h&nbs=1&oi=1782024106&platform=html5&mid=0&deadline=1755340496&upsig=3c614f6ba56ed7341006626697a54876&uparams=e,uipk,gen,os,og,trid,nbs,oi,platform,mid,deadline&bvc=vod&nettype=0&bw=1335773&build=0&dl=0&f=h_0_0&agrr=1&buvid=&orderid=0,1'
+      keyD_Num = 0
     }
 
     /* 移动端 */
@@ -93,7 +94,7 @@
           // 彩蛋判断
           if (key.dataset.key === '68') {
             keyD_Num++
-            if(keyD_Num===4){
+            if (keyD_Num === 4) {
               gift()
             }
           }
@@ -113,12 +114,12 @@
         audio.currentTime = 0 //播放后使音频归零
         audio.play()
         // 彩蛋判断
-         if (key.dataset.key === '68') {
-            keyD_Num++
-            if(keyD_Num===4){
-              gift()
-            }
+        if (key.dataset.key === '68') {
+          keyD_Num++
+          if (keyD_Num === 4) {
+            gift()
           }
+        }
       }
 
       window.addEventListener('keydown', playSound)
