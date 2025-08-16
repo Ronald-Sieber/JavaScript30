@@ -19,3 +19,19 @@
 **为什么不用toggle？**
 
 首先过渡效果结束会触发removeTransition事件，而add class 会有过渡效果结束，remove class 也是，因此会有死循环
+
+
+
+**动态DOM和静态DOM**
+
+~~~js
+let dynamic=document.getElementsByClassName('key')
+
+let static=document.querySelectorAll('.key')
+~~~
+
+
+
+通过getElementsByClassName获取的为动态DOM，随元素节点的减少而减少(length值)
+
+querySelectorAll为静态DOM，拿到的值就一直是这个值除非重新获取
